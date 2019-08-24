@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log('loaded');
+
     var firebaseConfig = {
         apiKey: "AIzaSyDg2t3WNDNYgvlUTXfw57lKRGuxqAntImE",
         authDomain: "portfolio-d4563.firebaseapp.com",
@@ -14,11 +14,11 @@ $(document).ready(function () {
     database = firebase.database();
 
     function getUserFeedback() {
-        event.preventDefault();
-        let firstName = $('.firstName').val();
-        let lastName = $('.lastName').val();
-        let email = $('.email').val();
-        let feedback = $('.feedback').val();
+
+        var firstName = $('.firstName').val();
+        var lastName = $('.lastName').val();
+        var email = $('.email').val();
+        var feedback = $('.feedback').val();
 
         console.log(firstName);
         console.log(lastName);
@@ -38,12 +38,37 @@ $(document).ready(function () {
         $('.email').val('');
         $('.feedback').val('');
     }
+    
+    $('.dataField1').one('click', function(event){
+        event.preventDefault();
+        $('.dataField1').val('');
+    })
+    $('.dataField2').one('click', function(event){
+        event.preventDefault();
+        $('.dataField2').val('');
+    })
+    $('.dataField3').one('click', function(event){
+        event.preventDefault();
+        $('.dataField3').val('');
+    })
+    $('.dataField4').one('click', function(event){
+        event.preventDefault();
+        $('.dataField4').val('');
+    })
 
     $('.submit').on('click', function (event) {
+        event.preventDefault();
+        $('.contactModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+          })
         getUserFeedback();
     });
     $(document).keypress(function (event) {
         if (event.which == 13) {
+            event.preventDefault();
+            $('.contactModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')
+              })
             getUserFeedback();
         };
     });

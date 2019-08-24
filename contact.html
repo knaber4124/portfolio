@@ -35,38 +35,60 @@
             <div class="form-row">
                 <div class="col-md-6">
                     <label for="validationDefault01">First Name</label>
-                    <input type="text" class="form-control firstName" id="validationDefault01" placeholder="First name"
-                        value="First Name" required>
+                    <input type="text" class="form-control firstName dataField1" id="validationDefault01"
+                        placeholder="First name" value="First Name" required>
                 </div>
                 <div class="col-md-6">
                     <label for="validationDefault02">Last Name</label>
-                    <input type="text" class="form-control lastName" id="validationDefault02" placeholder="Last name"
-                        value="Last Name" required>
+                    <input type="text" class="form-control lastName dataField2" id="validationDefault02"
+                        placeholder="Last name" value="Last Name" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col-md-12">
                     <label for="validationDefault03">Email</label>
-                    <input type="text" class="form-control email" id="validationDefault03" placeholder="Email" required>
+                    <input type="text" class="form-control email dataField3" id="validationDefault03"
+                        placeholder="Email" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col-md-12">
-                    <label for="validationTextarea">Feedback</label>
-                    <textarea class="form-control feedback" id="validationTextarea"
+                    <label for="validationTextarea">Message</label>
+                    <textarea class="form-control feedback dataField4" id="validationTextarea"
                         placeholder="Please provide feedback on the site" required></textarea>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-md-4">
-                    <button class="btn btn-primary submit">Submit Feedback</button>
+                    <button class="btn btn-primary submit" data-toggle='modal'
+                        data-target='#exampleModal'>Submit</button>
                 </div>
                 <div class="col-md-8">
                 </div>
             </div>
         </form>
         <br>
+    </div>
+    <!-- <div class="contactModal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div> -->
     </div>
     <div class="footer">
         Copyright &copy; 2019 Keith Naber
