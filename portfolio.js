@@ -58,17 +58,17 @@ $(document).ready(function () {
 
     $('.submit').on('click', function (event) {
         event.preventDefault();
-        $('.contactModal').on('shown.bs.modal', function () {
-            $('#myInput').trigger('focus')
-          })
+        // $('.contactModal').on('shown.bs.modal', function () {
+        //     $('#myInput').trigger('focus')
+        //   })
         getUserFeedback();
     });
     $(document).keypress(function (event) {
         if (event.which == 13) {
             event.preventDefault();
-            $('.contactModal').on('shown.bs.modal', function () {
-                $('#myInput').trigger('focus')
-              })
+            // $('.contactModal').on('shown.bs.modal', function () {
+            //     $('#myInput').trigger('focus')
+            //   })
             getUserFeedback();
         };
     });
