@@ -38,37 +38,37 @@ $(document).ready(function () {
         $('.email').val('');
         $('.feedback').val('');
     }
-    
-    $('.dataField1').one('click', function(event){
+
+    $('.dataField1').one('click', function (event) {
         event.preventDefault();
         $('.dataField1').val('');
     })
-    $('.dataField2').one('click', function(event){
+    $('.dataField2').one('click', function (event) {
         event.preventDefault();
         $('.dataField2').val('');
     })
-    $('.dataField3').one('click', function(event){
+    $('.dataField3').one('click', function (event) {
         event.preventDefault();
         $('.dataField3').val('');
     })
-    $('.dataField4').one('click', function(event){
+    $('.dataField4').one('click', function (event) {
         event.preventDefault();
         $('.dataField4').val('');
     })
 
     $('.submit').on('click', function (event) {
         event.preventDefault();
-        // $('.contactModal').on('shown.bs.modal', function () {
-        //     $('#myInput').trigger('focus')
-        //   })
+        $('.contactModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
         getUserFeedback();
     });
     $(document).keypress(function (event) {
         if (event.which == 13) {
             event.preventDefault();
-            // $('.contactModal').on('shown.bs.modal', function () {
-            //     $('#myInput').trigger('focus')
-            //   })
+            $('.contactModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')
+            })
             getUserFeedback();
         };
     });

@@ -69,6 +69,18 @@ body{
 .name{
     text-align: center;
 }
+.modal-header{
+    background-color:#1F3833;
+    color:white;
+}
+.modal-footer{
+    background-color:#1F3833;
+    color:white;
+}
+.modal-button{
+    background-color: white;
+    color:black;
+}
 
 @media only screen and (max-width: 765px){
     .nav-item{
