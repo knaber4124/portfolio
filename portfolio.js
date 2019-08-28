@@ -13,6 +13,8 @@ $(document).ready(function () {
     firebase.initializeApp(firebaseConfig);
     database = firebase.database();
 
+
+
     function getUserFeedback() {
 
         var firstName = $('.firstName').val();
@@ -30,8 +32,10 @@ $(document).ready(function () {
             firstName: firstName,
             lastName: lastName,
             email: email,
-            feedback: feedback
+            feedback: feedback,
+            timeStamp: moment().format('MMMM D YYYY, h:mm a')
         })
+
 
         $('.firstName').val('');
         $('.lastName').val('');
@@ -62,6 +66,7 @@ $(document).ready(function () {
             $('#myInput').trigger('focus')
         })
         getUserFeedback();
+        
     });
     $(document).keypress(function (event) {
         if (event.which == 13) {
@@ -70,6 +75,7 @@ $(document).ready(function () {
                 $('#myInput').trigger('focus')
             })
             getUserFeedback();
+            
         };
     });
 
