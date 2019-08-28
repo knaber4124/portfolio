@@ -66,7 +66,6 @@ $(document).ready(function () {
             $('#myInput').trigger('focus')
         })
         getUserFeedback();
-        
     });
     $(document).keypress(function (event) {
         if (event.which == 13) {
@@ -75,7 +74,6 @@ $(document).ready(function () {
                 $('#myInput').trigger('focus')
             })
             getUserFeedback();
-            
         };
     });
 
