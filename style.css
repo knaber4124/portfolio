@@ -105,6 +105,16 @@ form{
 .portInfo{
     margin-bottom:10px;
 }
+.portImage{
+    height: 200px;
+    width:300px; 
+}
+.gitLabel{
+    color:black;
+}
+.gitLabel:hover{
+    color:white;
+}
 
 @media only screen and (max-width: 765px){
     .nav-item{
