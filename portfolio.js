@@ -13,8 +13,6 @@ $(document).ready(function () {
     firebase.initializeApp(firebaseConfig);
     database = firebase.database();
 
-
-
     function getUserFeedback() {
 
         var firstName = $('.firstName').val();
@@ -27,7 +25,6 @@ $(document).ready(function () {
         console.log(email);
         console.log(feedback);
 
-
         database.ref('/feedback').push({
             firstName: firstName,
             lastName: lastName,
@@ -35,7 +32,6 @@ $(document).ready(function () {
             feedback: feedback,
             timeStamp: moment().format('MMMM D YYYY, h:mm a')
         })
-
 
         $('.firstName').val('');
         $('.lastName').val('');
@@ -76,6 +72,4 @@ $(document).ready(function () {
             getUserFeedback();
         };
     });
-
-
 });

@@ -5,7 +5,7 @@ body{
 }
  h1{
     position:relative;
-    top:0px;
+    top:5px;
     left:15px;
     text-align:left;
     border: solid;
@@ -18,18 +18,39 @@ body{
     margin-top:25px;
     vertical-align: middle;
 }      
+form{
+    padding-top:10px;
+}
+.linkedLogo{
+    height : 40px;
+    width: 30px;
+    position: relative;
+    left: 10px;
+    bottom:10px;
+    
+}
+.gitLogo{
+    height:60px;
+    width:95px;
+    position: relative;
+    bottom:20px;
+}
+#headshot{
+    padding-top:15px;
+}
 
- .container{
+.container{
     background-color:white;
     width:960px;
     margin-left:auto;
     margin-right:auto;
- }
- .nav{
+}
+.nav{
      position:relative;
      top:50px;
+     margin-bottom: 50px;
      color:black;
- }
+}
 
 .footer{
     position: fixed;
@@ -80,6 +101,9 @@ body{
 .modal-button{
     background-color: white;
     color:black;
+}
+.portInfo{
+    margin-bottom:10px;
 }
 
 @media only screen and (max-width: 765px){
