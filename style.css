@@ -40,7 +40,7 @@ form{
 }
 
 .container{
-    background-color:white;
+    color: white;
     width:960px;
     margin-left:auto;
     margin-right:auto;
@@ -74,6 +74,9 @@ form{
     position:fixed;    
     bottom:0;
 }
+.indexText{
+    background: 	rgba(128,128,128,.8);
+}
 
 .label{
     background-color:#1F3833;
@@ -105,10 +108,12 @@ form{
 .portInfo{
     margin-bottom:10px;
 }
+
 .portImage{
     height: 250px;
     width:300px; 
 }
+
 .gitLabel{
     color:black;
 }
